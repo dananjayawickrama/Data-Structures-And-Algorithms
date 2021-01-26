@@ -1,0 +1,34 @@
+package A_Lec;
+
+public class Circle_QueueClass {
+
+	private int front;
+	private int rear;
+	private int noItems;
+	private int maxsize;
+	private int[] queueArray;
+	
+	
+	public Circle_QueueClass(int s)
+	{
+		front = 0;
+		rear = -1;
+		noItems = 0;
+		maxsize = s;
+		queueArray = new int[maxsize];
+		
+	}
+	
+	
+	public void insert(int m) {
+		
+		if(noItems == maxsize) {
+			System.out.println("Circle Queue is Full");
+		}else {
+			rear++;
+			queueArray[rear] = m;
+			noItems++;
+		}
+	}
+	
+}

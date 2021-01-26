@@ -1,0 +1,25 @@
+package A_Lec;
+
+public class Circle_QueueClassMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Circle_QueueClass  theQueue = new Circle_QueueClass(10);  // create a queue with max size 10
+		
+		 theQueue.insert(10);  // insert given items
+		 theQueue.insert(25);
+		 theQueue.insert(55);
+		 theQueue.insert(65);
+		 theQueue.insert(85);
+
+		while( !theQueue.isEmpty() ) {    // until it is empty, delete item from queue
+		
+			int val = theQueue.remove();
+			System.out.print(val);
+			System.out.print(" ");
+		}
+	
+	}
+
+}

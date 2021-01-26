@@ -1,0 +1,13 @@
+package A_Lec;
+
+public class QueueMainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Queue_Class qc1 = new Queue_Class(4);
+		
+		
+	}
+
+}

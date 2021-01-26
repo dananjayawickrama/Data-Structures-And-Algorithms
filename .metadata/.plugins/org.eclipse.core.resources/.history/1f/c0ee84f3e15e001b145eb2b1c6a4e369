@@ -1,0 +1,44 @@
+package C_Tute2;
+
+public class A_CircleQMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		A_CircleQ cq = new A_CircleQ(7);
+		cq.insert(1);
+		cq.insert(2);
+		cq.insert(3);
+		cq.insert(4);
+		cq.insert(5);
+		cq.insert(6);
+		cq.insert(7);
+	
+		//display 1st insert
+		while() {
+			System.out.print(cq.remove());
+		}
+		
+		
+		
+		
+		int elements = 3;
+		A_StackClass s1 = new A_StackClass(elements);
+	
+		for(int i = 0;i < elements;i++) {
+			s1.push(cq.remove());
+		}
+		
+		
+		for(int i = 0;i < elements;i++) {
+			cq.insert(s1.pop());
+		}
+		
+
+		
+		
+		
+	}
+
+}

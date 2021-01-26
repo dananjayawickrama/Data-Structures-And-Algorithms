@@ -1,0 +1,40 @@
+package B_Labsheet1;
+
+import java.util.Scanner;
+
+public class StackXMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter Expression");
+		String expression = sc.next();
+		int lengthE = expression.length();
+		
+		StackX stx1 = new StackX(lengthE);
+		
+		
+		for(int i = 0;i < lengthE;i++) {
+			
+			char gettingChar = expression.charAt(i);
+			
+			if(gettingChar == '(') {
+				
+				stx1.push(gettingChar);
+			
+			}else if(gettingChar == ')') {
+				
+				char gettingChar2 = stx1.pop();
+				
+				if(gettingChar2 != '(') {
+					return;
+				}
+			}
+		}
+		
+		
+	}
+
+}

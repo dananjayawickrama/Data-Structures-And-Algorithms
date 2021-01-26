@@ -1,0 +1,60 @@
+package C_Tute1;
+
+
+public class StacX{
+	
+	private int top;
+	private int stackarrayMaxsize;
+	private char charterStackArray[];
+	
+	public StacX(int m) {
+		
+		top = -1;
+		stackarrayMaxsize = m;
+		charterStackArray = new char[stackarrayMaxsize];
+	}
+
+	
+	public void push(char c) {
+		
+		if(top == stackarrayMaxsize-1)
+			System.out.println("Stack is Full You Can't insert "+ c);
+		else {
+			
+			top++;
+			charterStackArray[top] = c;
+		}
+	}
+	
+	
+	public char pop() {
+		
+		if(top == -1)
+		{
+			System.out.println("Stack is Empty");
+			return ' ';
+		
+		}else{
+			char temp = charterStackArray[top--];
+		    return temp;
+		}
+	}
+	
+	
+	public char peek() {
+		
+		
+	}
+	
+	
+	public boolean isEmpty() {
+		
+		return(top == -1);
+	}
+	
+	public boolean isFull() {
+		return (top == stackarrayMaxsize - 1);
+	}
+	
+	
+}

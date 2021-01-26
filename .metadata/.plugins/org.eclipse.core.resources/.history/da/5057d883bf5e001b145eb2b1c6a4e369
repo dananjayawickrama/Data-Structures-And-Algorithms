@@ -1,0 +1,22 @@
+package A_Lec;
+
+public class QueueMainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Queue_Class qc1 = new Queue_Class(4);
+		qc1.insert(4);
+		qc1.insert(8);
+		qc1.insert(12);
+		qc1.insert(16);
+		
+		int temp = qc1.remove();
+		System.out.println("Removing "+temp);
+		
+		
+		
+	
+	}
+
+}

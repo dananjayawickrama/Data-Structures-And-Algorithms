@@ -1,0 +1,32 @@
+package C_Tute1;
+
+import A_Lec.A_StackX;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+	StacX x1 = new StacX(3);
+		
+		x1.push(2);//insert first
+		x1.push(3);
+		x1.push(4);//insert last
+		x1.push(5);//print stack is full
+		x1.push(6);//print stack is full
+		
+		
+		System.out.println();
+		
+		
+		while(!x1.isEmpty()) {
+			
+			int temp = x1.pop();
+			
+			System.out.println("removing "+temp);
+		}
+
+	}
+
+}

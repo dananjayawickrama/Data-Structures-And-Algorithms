@@ -1,0 +1,35 @@
+package A_Lec;
+
+public class Queue_Class {
+	
+	private int front;
+	private int rear;
+	private int maxSize;
+	private int noOfItems;
+	private int queueArray[];
+	
+	
+	
+	public Queue_Class(int m) {
+	
+		front = 0;
+		rear = -1;
+		maxSize = m;
+		noOfItems = 0;
+		queueArray = new int[maxSize];
+	}
+
+	public void insert(int i) {
+		
+		if(rear == maxSize -1) {
+			
+			System.out.println("Queue is Full");
+		}else {
+			
+			queueArray[rear++] = i;
+		}
+	}
+	
+	
+	
+}

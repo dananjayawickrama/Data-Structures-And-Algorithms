@@ -1,0 +1,60 @@
+package A_Lec;
+
+public class Queue_Class {
+	
+	private int front;
+	private int rear;
+	private int maxSize;
+	private int noOfItems;
+	private int queueArray[];
+	
+	
+	
+	public Queue_Class(int m) {
+	
+		front = 0;
+		rear = -1;
+		maxSize = m;
+		noOfItems = 0;
+		queueArray = new int[maxSize];
+	}
+
+	public void insert(int i) {
+		
+		if(rear == maxSize -1) {
+			
+			System.out.println("Queue is Full");
+		}else {
+			
+			queueArray[rear++] = i;
+			noOfItems++;
+		}
+	}
+	
+	public int remove() {
+		
+		if(noOfItems == 0) {
+			System.out.println("Empty");
+		    return -99;
+		}else {
+			noOfItems--;
+			return queueArray[front++];
+		}
+	}
+	
+	public int peek() {
+		
+		if(noOfItems == 0) {
+			System.out.println("Empty");
+			return -99;
+		}else {
+			return queueArray[front];
+		}
+	}
+	
+	
+	public boolean isEmpty() {
+		return (noOfItems == 0);
+	}
+	
+}

@@ -1,0 +1,19 @@
+package B_Lab1;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		StackClass st1 = new StackClass(4);
+		st1.push('A');
+		st1.push('B');
+		st1.push('C');
+		st1.push('D');
+		st1.push('E');
+		
+	
+	}
+
+}

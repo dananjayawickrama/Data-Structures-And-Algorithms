@@ -1,0 +1,31 @@
+package C_Tute1;
+
+import A_Lec.A_StackX;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+	StacX x1 = new StacX(3);
+		
+		x1.push('A');//insert first
+		x1.push('B');
+		x1.push('C');//insert last
+		
+		
+		
+		System.out.println();
+		
+		
+		
+			
+			char temp = x1.peek();
+			
+			System.out.println("peek Value is "+temp);
+		
+
+	}
+
+}

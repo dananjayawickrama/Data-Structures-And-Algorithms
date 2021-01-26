@@ -1,0 +1,40 @@
+package B_Lab1;
+
+public class StackClass {
+	
+	private int top;
+	private int stackarrayMaxsize;
+	private char charterStackArray[];
+	
+	public StackClass(int m) {
+		
+		top = -1;
+		stackarrayMaxsize = m;
+		charterStackArray = new char[stackarrayMaxsize];
+	}
+
+	
+	public void push(char c) {
+		
+		if(top == stackarrayMaxsize-1)
+			System.out.println("Stack is Full You Can't insert");
+		else {
+			
+			top++;
+			charterStackArray[top] = c;
+		}
+	}
+	
+	
+	public char pop() {
+		
+		if(top == -1)
+			return ',';
+		else{
+			char temp = charterStackArray[top--];
+		    return temp;
+		}
+	}
+	
+	
+}

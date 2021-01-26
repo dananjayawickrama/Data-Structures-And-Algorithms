@@ -1,0 +1,14 @@
+package B_Lab1;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	Scanner sc = new Scanner(System.in)
+	
+		
+		
+	}
+
+}

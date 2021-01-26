@@ -1,0 +1,51 @@
+package C_Tute2;
+
+import java.util.Scanner;
+
+public class A_CircleQMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int myArray[] = new int[];
+		
+		System.out.println("How many Elements Do you Insert to the Circle Queue : ");
+		int eleQ = sc.nextInt();
+		
+		for(int r = 0;r< eleQ;r++) {
+			System.out.println("Enter "+(r+1)+" Element :");
+			
+		}
+		
+		A_CircleQ cq = new A_CircleQ(7);
+		cq.insert(1);
+		cq.insert(2);
+		cq.insert(3);
+		cq.insert(4);
+		cq.insert(5);
+		cq.insert(6);
+		cq.insert(7);
+	
+
+		
+		int elements = 3;
+		A_StackClass s1 = new A_StackClass(elements);
+	
+		for(int i = 0;i < elements;i++) {
+			s1.push(cq.remove());
+		}
+		
+		
+		for(int i = 0;i < elements;i++) {
+			cq.insert(s1.pop());
+		}
+		
+
+		
+		
+		
+	}
+
+}

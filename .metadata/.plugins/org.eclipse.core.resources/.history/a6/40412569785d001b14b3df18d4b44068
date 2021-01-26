@@ -1,0 +1,9 @@
+package B_Lab1;
+
+public class StackClass {
+	
+	private int top;
+	private int stackarrayMaxsize;
+	
+
+}
